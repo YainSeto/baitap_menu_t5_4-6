@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .wrapper {
+            background-color: wheat;
+            width: 1000px;
+            height: 700px;
+        }
+        
+        .content {
+            width: 1000px;
+            height: 400px;
+        }
+        
+        .content aside {
+            width: 30%;
+            height: 400px;
+            background-color: rgb(243, 164, 164);
+            float: left;
+        }
+        
+        .content section {
+            width: 70%;
+            height: 400px;
+            background-color: brown;
+            float: left;
+        }
+        
+        .content section>#sec1 {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(241, 204, 191);
+            float: left;
+            overflow: auto;
+        }
+        
+        .content section>#sec2 {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(110, 187, 144);
+            float: left;
+            overflow: auto;
+        }
+        
+        header {
+            background-color: White;
+            width: 100%;
+            height: 80px;
+        }
+        
+        .menu li {
+            width: 180px;
+            height: 50px;
+            float: left;
+            line-height: 50px;
+            text-indent: 15px;
+            background-color: darkkhaki;
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            font-size: large;
+        }
+        
+        .menu li:hover {
+            background-color: rgb(230, 46, 46);
+        }
+        
+        li:hover>a {
+            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: yellow;
+        }
+        
+        .menu li .submenu {
+            display: none;
+        }
+        
+        .menu li:hover>.submenu {
+            display: block;
+            position: sticky;
+        }
+        
+        span {
+            width: 280px;
+            height: 50px;
+            float: left;
+            background-color: wheat;
+            line-height: 50px;
+        }
+        
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(154, 172, 189);
+        }
+        aside form{
+            padding:3px;
+        }
+        footer img{
+            width: 50%;
+            height: 200px;
+        }
+        footer iframe{
+            width: 50%;
+            height: 200px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a>
+                    <ul class="submenu">
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">HELP</a></li>
+                    </ul>
+                </li>
+                <li><a href="">HELP</a></li>
+                <span>
+                    <label for="nhan">Search</label>
+                    <input type="text" name="nhan" id="nhan">
+                    <input type="button" value="go">
+                </span>
+            </ul>
+
+        </nav>
+        <header></header>
+        <div class="content">
+            <aside>
+                <form action="">
+                    <label for="Name">Name</label><br>
+                    <input type="text" id="Name" name="Name" value="" size="20" maxlength="20" ><br><br>
+                    <label for="phone">Telephone Number</label><br>
+                    <input type="number" id="phone" name="phone" value="" size="20" maxlength="20" ><br><br>
+                    <label for="Email">Email</label><br>
+                    <input type="email" id="Email" name="Email" value="" size="20" maxlength="20" ><br><br>
+                    <label for="date">Birthday</label><br>
+                    <input type="date" id="date" name="date" value="" size="20" maxlength="20" ><br><br>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="5">Your Input:</textarea><br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" value="Send Form">
+                        <input type="reset" value="Clear Form">
+                    </div>
+                </form>
+            </aside>
+            <section>
+                <div id="sec1">
+                    <ul>
+                        <li><h2 style="color: black;">HTML Tutorial</h2></li>
+                        <li><a href="">HTML HOME</a></li>
+                        <li><a href="">HTML Introduction</a></li>
+                        <li><a href="">HTML Editors</a></li>
+                        <li><a href="">HTML Basic</a></li>
+                        <li><a href="">HTML Element</a></li>
+                        <li><a href="">HTML Attributes</a></li>
+                        <li><a href="">HTML Headings</a></li>
+                        <li><a href="">HTML Paragraphs</a></li>
+                        <li><a href="">HTML Styles</a></li>
+                        <li><a href="">HTML Formatting</a></li>
+                        <li><a href="">HTML Quotations</a></li>
+                        <li><a href="">HTML Computercode</a></li>
+                        <li><a href="">HTML Comments</a></li>
+                        <li><a href="">HTML CSS</a></li>
+                        <li><a href="">HTML Links</a></li>
+                        <li><a href="">HTML Images</a></li>
+                        <li><a href="">HTML Tables</a></li>
+                        <li><a href="">HTML Lists</a></li>
+                        <li><a href="">HTML Blocks & Inline</a></li>
+                        <li><a href="">HTML Classes</a> </li>
+                        <li><a href="">HTML Id</a> </li>
+                        <li><a href="">HTML Iframes</a> </li>
+                        <li><a href="">HTML JavaScript</a> </li>
+                        <li><a href="">HTML File Paths</a> </li>
+                        <li><a href="">HTML Head</a> </li>
+                        <li><a href="">HTML Layout</a> </li>
+                        <li><a href="">HTML Responsive</a> </li>
+                        <li><a href="">HTML Senmantics</a> </li>
+                        <li><a href="">HTML Style Guide</a> </li>
+                        <li><a href="">HTML Entities</a> </li>
+                        <li><a href="">HTML Sybols</a> </li>
+                        <li><a href="">HTML Emojis</a> </li>
+                        <li><a href="">HTML Charset</a> </li>
+                        <li><a href="">HTML URL Encode</a> </li>
+                        <li><a href="">HTML vs XHTML</a> </li>
+                    </ul>
+                </div>
+                <div id="sec2">
+                    <ul >
+                        <li><h2 style="color: black;">CSS Tutorial</h2></li>
+                        <li><a href="">CSS HOME</a></li>
+                        <li><a href="">CSS Introduction</a></li>
+                        <li><a href="">CSS Syntax</a></li>
+                        <li><a href="">CSS Selectors</a></li>
+                        <li><a href="">CSS How To</a></li>
+                        <li><a href="">CSS Comments</a></li>
+                        <li><a href="">CSS Colors</a></li>
+                        <li><a href="">CSS Backgrounds</a></li>
+                        <li><a href="">CSS Borders</a></li>
+                        <li><a href="">CSS Margins</a></li>
+                        <li><a href="">CSS Padding</a></li>
+                        <li><a href="">CSS Height/Width</a></li>
+                        <li><a href="">CSS Box Model</a></li>
+                        <li><a href="">CSS Outline</a></li>
+                        <li><a href="">CSS Text</a></li>
+                        <li><a href="">CSS Fonts</a></li>
+                        <li><a href="">CSS Icons</a></li>
+                        <li><a href="">CSS Links</a></li>
+                        <li><a href="">CSS Lists</a></li>
+                        <li><a href="">CSS Tables</a></li>
+                        <li><a href="">CSS Display</a></li>
+                        <li><a href="">CSS Max-width</a></li>
+                        <li><a href="">CSS Position</a></li>
+                        <li><a href="">CSS Z-index</a></li>
+                        <li><a href="">CSS Overflow</a></li>
+                        <li><a href="">CSS Float</a></li>
+                        <li><a href="">CSS Inline-block</a></li>
+                        <li><a href="">CSS Align</a></li>
+                        <li><a href="">CSS Combninators</a></li>
+                        <li><a href="">CSS Pseudo-class</a></li>
+                        <li><a href="">CSS Pseudo-element</a></li>
+                        <li><a href="">CSS Opacity</a></li>
+                        <li><a href="">CSS Navigation Bar</a></li>
+                        <li><a href="">CSS Dropdowns</a></li>
+                        <li><a href="">CSS Image Gallery</a></li>
+                        <li><a href="">CSS Image Sprites</a></li>
+                        <li><a href="">CSS Attr Selectors</a></li>
+                        <li><a href="">CSS Forms</a></li>
+                        <li><a href="">CSS Counters</a></li>
+                        <li><a href="">CSS Website Layout</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <img src="https://t.vietgiaitri.com/2021/5/5/chu-cho-xuat-hien-tren-dong-dogecoin-la-meme-tung-gay-dia-chan-mxh-dda-5767188.jpeg" alt="shiba-meme">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/7w8HlfC5Mb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </footer>
+    </div>
+</body>
+
+</html>
